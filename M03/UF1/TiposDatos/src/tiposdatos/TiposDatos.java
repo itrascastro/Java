@@ -24,6 +24,7 @@ public class TiposDatos {
         //TiposDatos.ejercicio2();
         //TiposDatos.ejercicio3();
         // TiposDatos.ejercicio4();
+        TiposDatos.ejercicio5();
     }
 
     public static void ejercicio1() {
@@ -95,7 +96,7 @@ public class TiposDatos {
     }
     
     /**
-     * El mayor de 3 números
+     * Tres números ordenados
      */
     public static void ejercicio5()
     {
@@ -111,16 +112,33 @@ public class TiposDatos {
         System.out.println("Introduce el tercer número");
         n3 = teclado.nextInt();
         
-        if (n1>n2 && n1>n3) {
+        if (n1 >= n2 && n1 >= n3) {
             mayor = n1;
-        } else if (n2>n1 && n2>n3) {
+        } else if (n2 >= n1 && n2 >= n3) {
             mayor = n2;
         } else {
             mayor = n3;
         }
         
-        System.out.println("El mayor es: " + mayor);
-        
+        if (mayor == n1) {
+            if (n2 > n3) {
+                System.out.println("Orden: " + mayor + n2 + n3);
+            } else {
+                System.out.println("Orden: " + mayor + n3 + n2);
+            }
+        } else if (mayor == n2) {
+            if (n1 > n3) {
+                System.out.println("Orden: " + mayor + n1 + n3);
+            } else {
+                System.out.println("Orden: " + mayor + n3 + n1);
+            }
+        } else {
+            if (n1 > n2) {
+                System.out.println("Orden: " + mayor + n1 + n2);
+            } else {
+                System.out.println("Orden: " + mayor + n2 + n1);
+            }
+        }
     }
 
 }
