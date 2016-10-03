@@ -23,7 +23,7 @@ public class TiposDatos {
         //TiposDatos.ejercicio1();
         //TiposDatos.ejercicio2();
         //TiposDatos.ejercicio3();
-        TiposDatos.ejercicio4();
+        // TiposDatos.ejercicio4();
     }
 
     public static void ejercicio1() {
@@ -112,8 +112,14 @@ public class TiposDatos {
         n3 = teclado.nextInt();
         
         if (n1>n2 && n1>n3) {
-            
+            mayor = n1;
+        } else if (n2>n1 && n2>n3) {
+            mayor = n2;
+        } else {
+            mayor = n3;
         }
+        
+        System.out.println("El mayor es: " + mayor);
         
     }
 
