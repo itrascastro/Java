@@ -5,6 +5,7 @@
  */
 package tiposdatos;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -14,6 +15,7 @@ import java.util.Scanner;
 public class TiposDatos {
 
     private static final Scanner teclado = new Scanner(System.in);
+    private static final Random aleatorio = new Random();
 
     /**
      * @param args the command line arguments
@@ -24,7 +26,7 @@ public class TiposDatos {
         //TiposDatos.ejercicio2();
         //TiposDatos.ejercicio3();
         // TiposDatos.ejercicio4();
-        TiposDatos.ejercicio5();
+        TiposDatos.ejercicio6();
     }
 
     public static void ejercicio1() {
@@ -151,6 +153,26 @@ public class TiposDatos {
     
     public static void ejercicio6()
     {
+        int n, n1;
+        
+        n = aleatorio.nextInt(10);
+        n1 = teclado.nextInt();
+        
+        if (n1 == n) {
+            // acierto a la primera
+        } else {
+            n1 = teclado.nextInt();
+            if (n1 == n) {
+                // acierto a la segunda
+            } else {
+                n1 = teclado.nextInt();
+                if (n1 == n) {
+                    // acierto a la tercera
+                } else {
+                    // No hay más intentos
+                }
+            }
+        }
         
     }
 
