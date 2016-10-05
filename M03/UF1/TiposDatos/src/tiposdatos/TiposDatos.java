@@ -148,5 +148,10 @@ public class TiposDatos {
         System.out.println("Los números ordenados son: " 
                 + mayor + " " + medio + " " + menor);
     }
+    
+    public static void ejercicio6()
+    {
+        
+    }
 
 }
