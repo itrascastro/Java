@@ -26,7 +26,7 @@ public class TiposDatos {
         //TiposDatos.ejercicio2();
         //TiposDatos.ejercicio3();
         // TiposDatos.ejercicio4();
-        TiposDatos.ejercicio6();
+        TiposDatos.ejercicio7();
     }
 
     public static void ejercicio1() {
@@ -173,6 +173,31 @@ public class TiposDatos {
                 }
             }
         }
+    }
+    
+    public static void ejercicio7()
+    {
+        double nota;
+        String calificacion;
+        
+        System.out.println("Introduce una nota");
+        nota = teclado.nextDouble();
+        
+        if (nota < 5) {
+            calificacion = "Suspenso";
+        } else if (nota >= 5 && nota < 6.5) {
+            calificacion = "Aprobado";
+        } else if (nota >= 6.5 && nota < 7) {
+            calificacion = "Bien";
+        } else if (nota >= 7 && nota < 8.5) {
+            calificacion = "Notable";
+        } else if (nota >= 8.5 && nota < 9.75) {
+            calificacion = "Excelente";
+        } else {
+            calificacion = "Matricula";
+        }
+        
+        System.out.println(calificacion);
         
     }
 
