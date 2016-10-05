@@ -101,7 +101,7 @@ public class TiposDatos {
     public static void ejercicio5()
     {
         int n1, n2, n3;
-        int mayor;
+        int mayor, medio, menor;
         
         System.out.println("Introduce el primer número");
         n1 = teclado.nextInt();
@@ -122,23 +122,31 @@ public class TiposDatos {
         
         if (mayor == n1) {
             if (n2 > n3) {
-                System.out.println("Orden: " + mayor + n2 + n3);
+                medio = n2;
+                menor = n3;
             } else {
-                System.out.println("Orden: " + mayor + n3 + n2);
+                medio = n3;
+                menor = n2;
             }
         } else if (mayor == n2) {
             if (n1 > n3) {
-                System.out.println("Orden: " + mayor + n1 + n3);
+                medio = n1;
+                menor = n3;
             } else {
-                System.out.println("Orden: " + mayor + n3 + n1);
+                medio = n3;
+                menor = n1;
             }
         } else {
             if (n1 > n2) {
-                System.out.println("Orden: " + mayor + n1 + n2);
+                medio = n1;
+                menor = n2;
             } else {
-                System.out.println("Orden: " + mayor + n2 + n1);
+                medio = n2;
+                menor = n1;
             }
         }
+        System.out.println("Los números ordenados son: " 
+                + mayor + " " + medio + " " + menor);
     }
 
 }
