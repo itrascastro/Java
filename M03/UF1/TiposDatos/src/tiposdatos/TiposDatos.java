@@ -285,6 +285,25 @@ public class TiposDatos {
         System.out.println("El valor de la media es: " + res);
     }
     
+    public static void diaSemana()
+    {
+        int num;
+        
+        System.out.println("Introduce un número");
+        num = teclado.nextInt();
+        
+        switch (num) {
+            case 1: 
+                System.out.println("Lunes");
+                break;
+            case 2:
+                System.out.println("Martes");
+                break;
+                
+        }
+        
+    }
+    
     public static void readChar()
     {
         char c, acta;
