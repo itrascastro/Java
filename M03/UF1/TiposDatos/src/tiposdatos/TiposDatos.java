@@ -336,5 +336,26 @@ public class TiposDatos {
         }
         
     }
+    
+    public static void ejemploWhile()
+    {
+        int cnt;
+        
+        for (cnt = 0; cnt < 10; cnt++) {
+            System.out.println(cnt);
+        }
+        
+        cnt = 0;
+        while (cnt < 10) {
+            System.out.println(cnt);
+            cnt++;
+        }
+        
+        cnt = 0;
+        do {
+            System.out.println(cnt);
+            cnt++;
+        } while (cnt < 10);
+    }
 
 }
