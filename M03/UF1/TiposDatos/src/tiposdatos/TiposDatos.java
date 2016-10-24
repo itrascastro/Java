@@ -26,7 +26,7 @@ public class TiposDatos {
         //TiposDatos.ejercicio2();
         //TiposDatos.ejercicio3();
         // TiposDatos.ejercicio4();
-        TiposDatos.ejercicio7();
+        TiposDatos.ejercicio11();
     }
 
     public static void ejercicio1() {
@@ -198,6 +198,123 @@ public class TiposDatos {
         }
         
         System.out.println(calificacion);
+    }
+    
+    /**
+     * Tabla Multiplicar
+     */
+    public static void ejercicio8() {
+        int cnt;
+        int n;
+        int res;
+        
+        System.out.println("Introduce un número");
+        n = teclado.nextInt();
+        
+        for (cnt=0; cnt < 11; cnt++) {
+            res = cnt * n;
+            System.out.println(n + " x " + cnt + " = " + res);
+        }
+    }
+    
+    /**
+     * Tabla Multiplicar sin For
+     */
+    public static void ejercicio9() {
+        int n = 3;
+        
+        System.out.println(n + " x " + 0 + " = " + (n * 0));
+        System.out.println(n + " x " + 1 + " = " + (n * 1));
+        System.out.println(n + " x " + 2 + " = " + (n * 2));
+        System.out.println(n + " x " + 3 + " = " + (n * 3));
+        System.out.println(n + " x " + 4 + " = " + (n * 4));
+    }
+    
+    /**
+     * Factorial
+     */
+    public static void ejercicio10() {
+        int n;
+        int factorial = 1;
+        int cnt;
+        
+        System.out.println("Introduce un número");
+        n = teclado.nextInt();
+        
+        for (cnt = 1; cnt <= n; cnt++) {
+            factorial = factorial * cnt;
+        }
+        
+        System.out.println(factorial);
+        
+    }
+    
+    /**
+     * Sumas parciales
+     */
+    public static void ejercicio11() {
+        int cnt;
+        int suma = 0;
+        int n;
+        
+        System.out.println("Introduce un número");
+        n = teclado.nextInt();
+        
+        for (cnt = 1; cnt <= n; cnt++) {
+            suma = suma + cnt;
+        }
+        
+        System.out.println("El valor de la suma es: " + suma);
+    }
+    
+    public static void ejercicio12() {
+        int cnt;
+        int suma = 0;
+        int n, res;
+        
+        for (cnt = 0; cnt <= 100; cnt++) {
+            n = aleatorio.nextInt(10);
+            if (n == 4) {
+                break;
+            }
+            suma = suma + n;
+        }
+        
+        res = suma / cnt;
+        
+        System.out.println("El valor de la media es: " + res);
+    }
+    
+    public static void readChar()
+    {
+        char c, acta;
+        int valor;
+        
+        c = teclado.next().charAt(0);
+        
+        valor = (int) c;
+        
+        if (valor < 65 || (c > 90 && c < 97) || c > 122) {
+            // no letras
+        } else if (c == 'a' || c == 'e') {
+            // vocales
+        } else {
+            // consonantes
+        }
+        
+        switch(c) {
+            case 0: acta = 'S';
+                    break;
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                //suspenso
+                break;
+            default:
+                //else
+                
+        }
         
     }
 
