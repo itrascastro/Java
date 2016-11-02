@@ -26,7 +26,7 @@ public class TiposDatos {
         //TiposDatos.ejercicio2();
         //TiposDatos.ejercicio3();
         // TiposDatos.ejercicio4();
-        TiposDatos.ejercicio11();
+        TiposDatos.generarSerie();
     }
 
     public static void ejercicio1() {
@@ -356,6 +356,42 @@ public class TiposDatos {
             System.out.println(cnt);
             cnt++;
         } while (cnt < 10);
+    }
+    
+    public static void generarSerie()
+    {
+        int par = 2;
+        int n = 20;
+        int cnt = 1;
+        int suma = 0;
+        
+        System.out.println(par);
+        
+        for (par = 2; par <= n * 2; par = par + 2) {
+            System.out.println(par);
+            suma = suma + par;
+        }
+        
+        while (cnt <= n) {
+            par = par + 2;
+            System.out.println(par);
+            suma = suma + par;
+            cnt++;
+        }
+        
+        do {
+            par = par + 2;
+            System.out.println(par);
+            suma = suma + par;
+            cnt++;
+        } while (cnt <= n);
+        
+        for (cnt = 2; cnt <= n; cnt++) {
+            par = par + 2;
+            System.out.println(par);
+            suma = suma + par;
+        }
+        
     }
 
 }
