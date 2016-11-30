@@ -38,13 +38,14 @@ public class Arrays {
         System.out.println("El menor es: " + min);
     }
     
-    public static void imprimirArray() {
-        int[] a = {2, 4, 0, 0, 0, 2, -1};
-        int i;
+    public static String imprimirArray(int[] a) {
+        String out = "";
         
-        for (i=0; i < a.length; i++) {
-            System.out.print(a[i] + " ");
+        for (int i=0; i < a.length; i++) {
+            out += a[i] + " ";
         }
+        
+        return out;
     }
     
     public static void sumaArray() {
@@ -56,8 +57,7 @@ public class Arrays {
             suma = suma + a[i];
         }
         
-        System.out.println("La suma es: " + suma);
-        
+        System.out.println("[" + Arrays.imprimirArray(a) + "]: " + suma);
     }
     
     public static void buscar() {
@@ -81,5 +81,13 @@ public class Arrays {
         } else {
             System.out.println("El número no está");
         }
+    }
+    
+    public static int[] rellenarAleatorios(int[] a) {
+        for (int i=0; i<a.length; i++) {
+            a[i] = Arrays.aleatorio.nextInt();
+        }
+        
+        return a;
     }
 }
