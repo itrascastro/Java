@@ -445,6 +445,7 @@ public class TiposDatos {
     
     public static void buscar() {
         int[] a = {3, 1, 4, -1, 10};
+        int[] b = new int[5];
         int i = 0;
         int n;
         boolean encontrado = false;
