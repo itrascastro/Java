@@ -38,7 +38,7 @@ public class Arrays2Dimensiones {
                         {2, 3, 4}, 
                         {3, 5, 6},
                         {1, 2, 6}
-                     };
+                    };
         
         Arrays2Dimensiones.imprimir(a, 3, 3);
         
@@ -74,4 +74,32 @@ public class Arrays2Dimensiones {
         
         System.out.println("La suma vale: " + suma);
     }
+    
+    public static void sumarFilasCols() {
+        int[][] a = {
+                        {2, 3, 4}, // 9
+                        {3, 5, 6}, // 14
+                        {1, 2, 6}  // 9
+                //      6, 10, 16
+                    };
+        
+        int sumaFil;
+        int sumaCol;
+        String salidaCol = "";
+        
+        for (int i = 0; i < 3; i++) {
+            sumaFil = 0;
+            sumaCol = 0;
+            for (int j = 0; j < 3; j++) {
+               System.out.print(a[i][j] + " ");
+               sumaFil = sumaFil + a[i][j]; 
+               sumaCol = sumaCol + a[j][i];
+            }
+            System.out.println("| " + sumaFil);
+            salidaCol = salidaCol + sumaCol + " ";
+        }
+        
+        System.out.println(salidaCol);
+    }
+    
 }
